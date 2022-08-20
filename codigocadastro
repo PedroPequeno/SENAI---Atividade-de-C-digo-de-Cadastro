@@ -1,0 +1,90 @@
+// Codigo para data atual //
+let data = new Date (); 
+
+// Entrada de variaveis para inscrição em evento e participantes // 
+var
+datahoje = data;
+
+// Banco de Dados //
+let numeroparticipantes = [];
+let listaparticipantes = ["Valter Branco", "José Homem Rosa", "Gustavo Pinto", "Miguel Bancos", "Denilson Lima", "Saulo HomemBom", "Céulia Branco"];
+let eventos = ["Produção Azul", "Lavagem Verde"];
+let eventolista = [];
+eventolista = eventos
+
+// Execução do Código //
+
+// Inscrição de Participante //
+
+console.log ("Empresa Savinis: Inscrições e Registros de Eventos");
+
+console.log ("-");
+
+console.log ("Deseja se Inscrever em um Evento ativo?");
+
+console.log ("-");
+
+console.log (eventolista);
+
+console.log (eventolista[0]);
+
+console.log ("-");
+
+console.log (eventolista[0] + " foi escolhido.");
+
+numeroparticipantes = listaparticipantes.length;
+
+console.log ("Lista de participantes: ");
+console.log (listaparticipantes)
+
+if (listaparticipantes.length < 100) {
+    console.log ("Há vagas disponíveis para este evento.") }
+else { console.log ("O número máximo de inscritos foi atingido. Cadastro não realizado.")}
+
+console.log ("-");
+
+console.log ("Insira seu nome:");
+
+console.log ("-");
+
+console.log ("Insira sua idade:");
+
+let idadeparticipante = 35
+if (idadeparticipante < 18) {
+    console.log ("Idade inválida. Eventos são apenas disponíveis para maiores de 18 anos.")
+} else {
+    console.log ("-");
+    console.log ("Cadastro concluído com êxito!")
+}
+console.log ("-");
+
+// Inscrição de evento //
+
+console.log ("Empresa Savinis: Inscrições e Registros de Eventos");
+
+console.log ("-");
+
+console.log ("Deseja inscrever um evento?");
+
+console.log ("-");
+
+console.log ("Insira o nome do palestrante");
+
+console.log ("-");
+
+console.log ("Insira a data do evento");
+
+console.log ("-");
+
+let dataevento = new Date (2022, 8, 30);
+
+if (dataevento > datahoje) {
+    console.log (dataevento)
+    console.log ("-");
+    console.log ("Evento agendado")
+} else {
+    console.log ("Data indisponível. Selecione outro dia")
+}
+console.log ("-");
+
+console.log("FIM")
